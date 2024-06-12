@@ -1,0 +1,13 @@
+name: Deploy with Approval
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: apply
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "apply"
